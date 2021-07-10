@@ -11,8 +11,11 @@ export function Numeros({...arg}) {
             array: arg.historial
         };
         return data.metodo(resultado);
-    }else if(arg.simbolos.test(arg.boton.innerText)){
+    }else if(arg.simbolos.test(arg.boton.innerText) && arg.boton.nodeName!="P"){
         return arg.operaciones(arg);
+    }else if(arg.boton.id == "igual"){
+        arg.igual = true;
+        return arg.operaciones(arg); 
     }else{
         return '';
     }

@@ -1,8 +1,6 @@
 export function Mostrar({...arg}) {
-   
-    // console.log(arg);
+
     if(Number.isInteger(arg.numero1)){
-        arg.resultado.innerHTML = "";
         let myClassP = {
             0: "fw-bold",
             1: "text-white",
@@ -33,15 +31,37 @@ export function Mostrar({...arg}) {
             }
             framen.appendChild(div);
         }
-        framen.children[0].children[0].appendChild(document.createTextNode("0"));
+        framen.children[0].children[0].appendChild(document.createTextNode(arg.resultado.children[0].children[0].innerText));
         framen.children[1].children[0].appendChild(document.createTextNode(arg.array(arg.numero1).join("")));
-        // console.log(arg.array(arg.numero1));
+        arg.resultado.innerHTML = "";
         return framen;
-    }else if(Array.isArray(arg.numero1)){
-        let data = arg.numero1.join("");
-        arg.resultado.children[0].children[0].innerText = arg.numero1.join(" ");
-        arg.resultado.children[1].children[0].innerText = eval(data.substring(0, data.length - 1));
+    }else if(typeof arg.numero1 == "object" && arg.igual){
+        arg.numero1 = Object.values(arg.numero1);
+        arg.resultado.children[0].children[0].innerText = "0";
+        arg.resultado.children[1].children[0].innerText = resultadosValidaos({numero1: arg.numero1});
         return ''; 
+    }else if(typeof arg.numero1 == "object"){
+        arg.numero1 = Object.values(arg.numero1);       
+        arg.resultado.children[0].children[0].innerText = arg.numero1.join(" ");
+        arg.resultado.children[1].children[0].innerText = resultadosValidaos({numero1: arg.numero1});
+        return ''; 
+    }
+
+    function resultadosValidaos({...arg}) {
+        let resultado = 0;
+        for (let i = 1; i < arg.numero1.length; ) {
+            if(i == (arg.numero1.length-1)){
+                break;
+            }else if(i==1){
+                resultado = eval(arg.numero1.slice(0,3).join(" "));
+            }else{
+                resultado = eval(resultado+" "+arg.numero1.slice(i,(i+2)).join(" "));
+            }
+            i+=2;
+        }
+        return resultado;
     }
 }
 export default Mostrar;
+
+

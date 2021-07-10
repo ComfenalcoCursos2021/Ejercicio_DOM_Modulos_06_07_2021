@@ -5,7 +5,7 @@ import Operacion from './js/operaciones.js';
 
 addEventListener("DOMContentLoaded", function (e) {
     addEventListener("click", function(e) {
-        
+
         let config = {
             boton: e.target,
             metodo: Mostrar,
@@ -15,6 +15,5 @@ addEventListener("DOMContentLoaded", function (e) {
             historial: array.historial
         } 
         config.resultado.append(Numeros(config));
-        // console.log(array.historial);
     })
 })
