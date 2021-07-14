@@ -24,13 +24,17 @@ export let historial = (()=>{
             lista.push(arg);
             data = lista;
         }else if(arg.simbolos.test(arg.boton.innerText)){
-            Historial.push(lista.join(""));
-            Historial.push(arg.boton.innerText);
+            if(lista.length!=0){
+                Historial.push(lista.join(""));
+                Historial.push(arg.boton.innerText);
+            }
             data = Historial;
             lista = [];
         }else if(arg.igual){
-            Historial.push(lista.join(""));
-            Historial.push(arg.boton.innerText);
+            if(lista.length!=0){
+                Historial.push(lista.join(""));
+                Historial.push(arg.boton.innerText);
+            }
             data = Historial;
             lista = [];
             Historial = [];

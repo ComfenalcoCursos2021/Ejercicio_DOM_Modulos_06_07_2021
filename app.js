@@ -11,9 +11,10 @@ addEventListener("DOMContentLoaded", function (e) {
             metodo: Mostrar,
             simbolos: /^[\*\-\+\/\\]/,
             operaciones: Operacion,
-            resultado: document.body.children.myResultados,
+            resultado: document.body.children[1].children[0].children[1].children.myResultados,
             historial: array.historial
         } 
+
         config.resultado.append(Numeros(config));
     })
 })

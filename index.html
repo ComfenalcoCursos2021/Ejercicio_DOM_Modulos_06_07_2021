@@ -11,72 +11,110 @@
     <title>DOM Modulos 06 Julio 2021</title>
 </head>
 <body style="background: #ced4da;">
-    <h1 class="text-center">My calculadora</h1>
-    <hr>
-
-    <!-- Caja de resultados de la calculadora -->
-    <div id="myResultados" class="bg-secondary">
-        <div class="pe-3">
-            <p class="fw-bold text-white fs-3 text-end mb-n3">0</p>
+    <h1 class="text-center">My calculadora windows 10</h1>
+    <div class="container-fluid">
+        <div class="row ">
+            <div class="col-sm-0 col-lg-4">
+                
+            </div>
+            <div class="col-sm-12 col-lg-4">
+                <div id="myResultados" class="bg-secondary">
+                    <div class="pe-3">
+                        <p class="fw-bold text-white fs-3 text-end mb-n3">0</p>
+                    </div>
+                    <div class="pb-2 pe-3">
+                        <p class="fw-bold text-white fs-1 text-end">0</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sm-0 col-lg-4">
+                
+            </div>
         </div>
-        <div class="pb-2 pe-3">
-            <p class="fw-bold text-white fs-1 text-end">0</p>
+        <div class="row my-4 ">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">%</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">CE</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">C</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">◄</button>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">½</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">X <sup>2</sup> </button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">√</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">/</button>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">7</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">8</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">9</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">*</button>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">4</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">5</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">6</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">-</button>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">1</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">2</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">3</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">+</button>
+            </div>
+        </div>
+        <div class="row my-4">
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-end">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">±</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">0</button>
+            </div>
+            <div class="col-6 col-sm-3 col-lg-1 text-center">
+                <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">,</button>
+            </div>
+            <div class="col-6 col-sm-3 text-center col-lg-5 text-lg-start">
+                <button id="igual" type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">=</button>
+            </div>
         </div>
     </div>
-    <hr>
-    <!-- Caja de operacion de submenu -->
-    <div class="text-center">
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary disabled">MC</button>
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary disabled">MR</button>
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary">M+</button>
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary">M-</button>
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary">MS</button>
-        <button type="button" class="rounded-0 vw-25 border border-3 text-dark btn btn-outline-secondary disabled">M</button>
-    </div>
-    <br>
-
-    <!-- Caja de los simbolos y numeros-->
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">%</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">CE</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">C</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">◄</button>
-    </div>
-    <br>
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">½</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">X <sup>2</sup> </button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">√</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">/</button>
-    </div>
-    <br>
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">7</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">8</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">9</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">*</button>
-    </div>
-    <br>
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">4</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">5</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">6</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">-</button>
-    </div>
-    <br>
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">1</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">2</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">3</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">+</button>
-    </div>
-    <br>
-    <div class="text-center">
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">±</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">0</button>
-        <button type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">,</button>
-        <button id="igual" type="button" class="rounded-0 fs-4 py-2 px-4 border border-3 text-dark btn btn-outline-secondary" style="width: 6rem;">=</button>
-    </div>
-
 </body>
 </html>
